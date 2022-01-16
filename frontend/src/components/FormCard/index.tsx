@@ -6,10 +6,10 @@ import { BASE_URL } from 'utils/requests';
 import './styles.css';
 
 type Props = {
-    movieId : string;
+    movieId : String;
 }
 
-function FormCard({movieId} : Props) {
+function FormCard( {movieId} : Props) {
 
     const [movie, setMovie] = useState<Movie>();
 
@@ -23,7 +23,7 @@ function FormCard({movieId} : Props) {
 
     return (
         <div className="dsmovie-form-container">
-            <img className="dsmovie-movie-card-image" src={movie?.image} alt="{movie?.title}" />
+            <img className="dsmovie-movie-card-image" src={movie?.image} alt="{movie.title}" />
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie?.title}</h3>
                 <form className="dsmovie-form">
